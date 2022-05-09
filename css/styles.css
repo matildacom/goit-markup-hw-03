@@ -11,17 +11,37 @@
     background-color: #FFFFFF;
     font-family: Roboto,sans-serif;
 }
+h1, h2, h3, p{
+    margin: 0;
+}
+img{
+    display: block;
+}
 /*main text color #212121*/
 /*secondary text color #757575*/
 /*#FFFFFF*/
 /*accent #2196F3*/
 /*header styles*/
-.header {
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{outline: 5px solid tomato;}
+.heade{
     background-color: #FFFFFF
 }
-ul{list-style: none;}
+.header-container {
+    display: flex;
+    align-items: center;}
+ul{
+    list-style: none;}
 
 .logo {
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -33,6 +53,15 @@ ul{list-style: none;}
 .colortext-header{
     color:var(--main-text-color);
 }
+.list-index{
+    display: flex;
+}
+.item-index{
+    margin-right: 50px;
+}
+.item-index:last-child{
+    margin-right: 0;
+}
 .link.current{
     color: #2196F3;}
 .link{
@@ -42,12 +71,20 @@ ul{list-style: none;}
     letter-spacing: 0.02em;
     color:var(--main-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 .link:hover,
 .link:focus {
     color: var(--accent);
 }
 
+.contacts{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
 .link-contacts-mail {
     font-weight: 500;
     font-size: 14px;
@@ -55,6 +92,9 @@ ul{list-style: none;}
     letter-spacing: 0.02em;
     color:var(--secondary-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 .link-contacts-mail:hover,
 .link-contacts-mail:focus{
@@ -68,10 +108,16 @@ ul{list-style: none;}
     letter-spacing: 0.02em;
     color:var(--secondary-text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
 }
 .link-contacts-tel:hover,
 .link-contacts-tel:focus{
     color: var(--accent);
+}
+.item-contacts-mail{
+    margin-right: 50px;
 }
 
 /*hero styles*/
