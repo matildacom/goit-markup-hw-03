@@ -277,7 +277,8 @@ ul{
     border-radius: 0;
 }
 .logo-footer{
-    margin:0;
+    margin:0px 93px 0px 0px;
+    padding: 24px 0px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
